@@ -1,0 +1,125 @@
+@CHARSET "UTF-8";
+
+.inputTxt {	
+	width: 20px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.cellLevelEx{    
+    width:120px;
+}
+
+.inputTxtEx {	
+	width: 200px;
+}
+
+.cellEx{
+    width: 120px;
+}
+
+.blankCell{
+    color: #4f6b72; 
+	border-left: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+    background: #DFE8F6;
+}
+
+.rowTitle{
+	color: #4f6b72; 
+	font: normal 11px;
+	border-left: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+    background: #DFE8F6;
+}
+
+.rowLevel {
+	color: #4f6b72; 
+	border-top: 1px solid #C1DAD7;
+	border-left: 1px solid #C1DAD7;
+    background: #DFE8F6;
+    width:30px;
+    height:30px;
+}
+
+.rowLevelEx{
+  width:80px;
+}
+
+.cellTitle {
+	color: #4f6b72;
+	font: normal 11px; 
+	border-top: 1px solid #C1DAD7;
+	border-left: 1px solid #C1DAD7;	
+    background: #DFE8F6;
+    width:30px;
+}
+.cellLevel {
+	color: #4f6b72;
+	border-top: 1px solid #C1DAD7; 
+	border-left: 1px solid #C1DAD7;
+    background: #DFE8F6;
+    width:30px;
+}
+
+
+.selectCellLevel {
+	color: #4f6b72;
+	border-top: 1px solid #C1DAD7; 
+	border-left: 1px solid #C1DAD7;
+    background: none repeat scroll 0 0 #00FF99;
+    width:30px;
+}
+
+.selectRowLevel {
+	color: #4f6b72; 
+	border-top: 1px solid #C1DAD7;
+	border-left: 1px solid #C1DAD7;
+    background: none repeat scroll 0 0 #00FF99;
+    width:30px;
+    height:30px;
+}
+
+.selectRowLevelEx{
+   width:80px;
+}
+
+.selectCell{
+   background: none repeat scroll 0 0 #00FF99;
+}
+
+.selectMatrixCell {
+	background: none repeat scroll 0 0 #00FF99;
+	font-size: 11px;
+	color: #4f6b72;
+	width:20px;
+    height:20px;
+}
+
+.cell {
+	background: #fff;
+	font-size: 11px;
+	color: #4f6b72;
+	width:20px;
+    height:20px;
+}
+
+.matrixDiv {
+	/*position: absolute;*/
+	margin:auto;
+    text-align:left;
+    float:left;
+}
+
+.matrixTable {
+	padding: 0px;
+	margin: 0px;	
+	border: 1px solid #C1DAD7;
+	text-align: center;
+	margin:auto;
+	background-color: #DFE8F6;	
+}
+
+.za44MatrixPanel{
+   width:700px;
+}

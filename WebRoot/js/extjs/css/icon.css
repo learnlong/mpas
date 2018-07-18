@@ -1,0 +1,50 @@
+.icon_gif_add{background-image:url(../images/icons/add.gif) !important;}
+.icon_gif_delete{background-image:url(../images/icons/delete.gif) !important;}
+.icon_gif_edit{background-image:url(../images/icons/edit.gif) !important;}
+.icon_gif_edit2{background-image:url(../images/icons/edit2.gif) !important;}
+.icon_gif_search{background-image:url(../images/icons/zoom.gif) !important;}
+.icon_gif_role{background-image:url(../images/icons/role.gif) !important;}
+.icon_gif_home{background-image:url(../images/icons/home.gif) !important;}
+.icon_gif_logout{background-image:url(../images/icons/logout.gif) !important;}
+.icon_gif_save{background-image:url(../images/icons/save.gif) !important;}
+.icon_gif_update{background-image:url(../images/toMaintainBtn.gif) !important;}
+.icon_gif_look{background-image:url(../images/icons/look.gif) !important;}
+.icon_gif_computer{background-image:url(../images/icons/computer.gif) !important;}
+.icon_gif_help{background-image:url(../images/icons/help.gif);}
+
+.icon_gif_pass{background-image:url(../images/icons/pass.png) !important;}
+.icon_gif_noPass{background-image:url(../images/icons/nopass.png)!important;}
+.icon_gif_accept{background-image:url(../images/icons/accept.gif) !important;}
+.icon_gif_reset{background-image:url(../images/icons/reset.gif) !important;}
+.icon_gif_update{background-image:url(../images/icons/pencil.gif) !important;}
+.icon_gif_view{background-image:url(../images/icons/lock.gif) !important;}
+.icon_png_qc{background-image:url(../images/icons/qc.gif) !important;}
+.icon_gif_enable{background-image:url(../images/icons/lock_open.gif) !important;}
+.icon_gif_back{background-image:url(../images/icons/arrow_back.gif) !important;}
+.icon_gif_next{background-image:url(../images/icons/arrow_next.gif) !important;}
+.icon_gif_export{background-image:url(../images/icons/export.png) !important;}
+.icon_gif_import{background-image:url(../images/icons/import.png) !important;}
+.icon_gif_template{background-image:url(../images/icons/template.gif) !important;}
+
+
+.user{ background:url(../images/icons/user.png) no-repeat 1px 2px !important;} 
+.key{ background:url(../images/icons/key.png) no-repeat 1px 2px !important; } 
+.code{ background:url(../images/icons/key.png) no-repeat 1px 2px !important; } 
+.key,.user,.code{ 
+	background-color:#FFFFFF; 
+	padding-left:20px; 
+	font-weight:bold; 
+ 	color:#000033; 
+ } 
+.icon_accept{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/icons/accept.png', sizingMethod='image');
+}
+
+.btn_css {   
+	BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP:   
+	#7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER:   
+	progid:DXImageTransform.Microsoft.Gradient(GradientType=0,   
+	StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd   
+	1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px;   
+	BORDER-BOTTOM: #7b9ebd 1px solid   
+} 

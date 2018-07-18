@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="lh5" extends="json-default" namespace="/lhirf/lh_5">
+       <action name="*" class="com.rskytech.lhirf.action.Lh5Action" method="{1}">
+				<!-- login -->
+				<result name="success" >/lhirf/lh_5.jsp</result>
+				<result name="lh6show" >/lhirf/lh_6.jsp</result>
+		</action>
+
+	</package>
+	
+</struts>

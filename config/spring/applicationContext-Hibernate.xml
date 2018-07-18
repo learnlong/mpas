@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-autowire="byName">	
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">			
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcltest" />	
+		<property name="username" value="test" />
+		<property name="password" value="test" /> 
+		<!--<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+		<property name="username" value="mpas" />
+		<property name="password" value="mpas" />-->
+		<property name="maxActive" value="100"/>
+        <property name="maxIdle" value="20"/>
+        <property name="maxWait" value="10000"/>
+        <property name="defaultReadOnly" value="false"/>
+        <property name="defaultAutoCommit" value="false"/>
+        <property name="removeAbandoned" value="true"/>
+        <property name="removeAbandonedTimeout" value="120"/>
+	</bean> 
+
+
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+	
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="lobHandler">
+			<ref bean="lobHandler"/>
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>classpath*:/com/**/*.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9Dialect</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.max_fetch_depth">3</prop>
+				<prop key="hibernate.query.substitutions">true 1, false 0, yes '1', no '0'</prop>			
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="messageSource"
+ 		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>resource/message</value> 
+				<value>resource/constant</value>
+			</list>
+		</property>
+	</bean>
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="fetch*" read-only="true" />
+			<tx:method name="retrieve*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+
+    <bean id="exceptionadvice" class="com.richong.arch.exception.ExceptionInterceptor" />
+
+	<aop:config>
+		<aop:pointcut id="txServiceOperation"
+			expression="execution(* com..bo..*(..))" />
+		<aop:pointcut id="exceptionPointcut" expression="execution(* com..bo..*(..))" />
+		<aop:advisor pointcut-ref="txServiceOperation" advice-ref="txAdvice" />
+        <aop:advisor pointcut-ref="exceptionPointcut" advice-ref="exceptionadvice"/>        
+	</aop:config>
+	
+	<bean id="dao" class="com.richong.arch.dao.impl.BaseDAO"></bean>
+	<bean id="bo" class="com.richong.arch.bo.impl.BaseBO">
+		<property name="dao">
+			<ref bean="dao" />
+		</property>
+	</bean>
+</beans>

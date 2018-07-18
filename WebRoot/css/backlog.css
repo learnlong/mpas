@@ -1,0 +1,144 @@
+body {
+	background-image: url(../images/index/daibanbeijing.gif);
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+.body {
+	margin-left: 5px;
+	width: 100%;
+	height: 400px;
+}
+
+.weihudiv {
+	/*font-family: "ºÚÌå";*/
+	min-width: 100%;
+	height: 99%;
+}
+
+.daiban {
+	float: left;
+	margin-left: 10px;
+	/*font-family: 'ËÎÌå';*/
+	font-weight: bold;
+	height: 10%;
+	line-height: 35px;
+}
+
+.style {
+	color: #0C51A0;
+	float: left;
+	font-weight: bold;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 5px;
+}
+
+.shenpikuang {
+	border: 2px solid #99BBE8;
+	text-align: center;
+	height: 27px;
+	line-height: 27px;
+	width: 260px;
+	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 18px;
+	box-shadow: 3px 3px 4px #99BBE8;
+	-moz-box-shadow: 3px 3px 4px #99BBE8;
+	-webkit-box-shadow: 3px 3px 4px #99BBE8;
+	filter: progid : DXImageTransform.Microsoft.Shadow ( Strength = 4,
+		Direction =   135, Color =   '#99BBE8' );
+	text-indent: 10px;
+	width: 60%;
+}
+
+.shenpikuang a {
+	color: red !important;
+	text-decoration: none;
+}
+
+.shenpikuang a:hover {
+	text-decoration: underline;
+}
+
+.analysemag {
+	display: none;
+	min-width: 95%;
+	height: 90%;
+	margin-top: 10px;
+}
+
+.kuang {
+	float: left;
+	text-indent: 20px;
+	height: 26px;
+	line-height: 26px;
+	width: 230px;
+	margin-top: 4px;
+	margin-left: 20px !important;
+	font-size: 13px;
+}
+
+.btn1_mouseout {
+	border-right: #CCD8E7 1px solid;
+	padding-right: 2px;
+	border-top: #CCD8E7 1px solid;
+	padding-left: 2px;
+	font-size: 14px;
+	border-left: #CCD8E7 1px solid;
+	cursor: hand;
+	color: black;
+	padding-top: 2px;
+	border-bottom: #CCD8E7 2px solid;
+	width: 226px;
+	height: 26px
+}
+
+.btn1_mouseover {
+	border-right: #CCD8E7 2px solid;
+	padding-right: 3px;
+	border-top: #CCD8E7 2px solid;
+	padding-left: 3px;
+	border-left: #CCD8E7 2px solid;
+	cursor: hand;
+	padding-top: 3px;
+	border-bottom: #CCD8E7 3px solid;
+	width: 226px;
+	height: 26px;
+	font-size: 15px;
+}
+
+.wanttododiv {
+	min-width: 98%;
+	height: 90%;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.approval {
+	margin-left: 30px;
+	margin-top: 15px;
+	width: 90%;
+	height: 30px;
+}
+
+.icon {
+	width: 28px;
+	height: 23px;
+	margin-top: 2px;
+	float: left;
+}
+
+.style1 {
+	color: red;
+}
+
+.maintion {
+	margin-left: 30px;
+	margin-top: 5px;
+	width: 90%;
+	height: 30px;
+}

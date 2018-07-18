@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="baseData_upload" extends="json-default"
+		namespace="/baseData/upload">
+		<action name="*" class="com.rskytech.basedata.action.FileUploadAction"
+			method="{1}">
+			<!-- <interceptor-ref name="fileUpload"> <param name="maximumSize">5000</param> 
+				<param name="allowedTypes">image/gif,image/jpeg,image/pjpeg,image/bmp,image/png,image/x-png</param> 
+				</interceptor-ref> <interceptor-ref name="defaultStack" /> <result name="input">/baseData/uploadError.jsp</result> -->
+		</action>
+	</package>
+</struts>

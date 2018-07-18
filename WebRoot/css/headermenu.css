@@ -1,0 +1,123 @@
+.x-form-radio2{
+    vertical-align: top;
+    margin-top: 5px;
+}
+.x-form-cb-label2 {
+    width:auto !important;
+    float:none !important;
+    clear:none !important;
+    display:inline !important;
+    margin-left:4px;
+    top: 3px;
+}
+.x-rc-form-table-td-complete {
+	background-image: url(../images/niv/complete.png);
+	background-repeat:no-repeat;
+	min-width:80;
+	width:80;
+	autoWidth:false;
+	text-indent: 20px;
+	line-height:25px;
+}
+
+.x-rc-form-table-td-maintain {
+	background-image: url(../images/niv/maintain.png);
+	background-repeat:no-repeat;
+	text-indent: 20px;
+	line-height:25px;
+}
+
+.x-rc-form-table-td-disable {
+	background-image: url(../images/niv/disable.png);
+	background-repeat:no-repeat;
+	text-indent: 20px;
+	line-height:25px;
+}
+
+.x-rc-form-table-td-every {
+	background-image: url(../images/niv/complete.png);
+	background-repeat:no-repeat;
+	text-indent: 20px;
+	line-height:25px;
+}
+
+.x-rc-form-table-td-next {
+	background-image: url(../images/niv/next.png);
+	background-repeat:no-repeat;
+	width : 50px;
+	text-indent: 10px;
+	line-height:25px;
+}
+
+.x-rc-form-table-td-sys-complete {
+	background-image: url(../images/niv/complete.png);
+	background-repeat:no-repeat;
+	width:80px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sys-maintain {
+	background-image: url(../images/niv/maintain.png);
+	background-repeat:no-repeat;
+	width:80px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sys-disable {
+	background-image: url(../images/niv/disable.png);
+	background-repeat:no-repeat;
+	width:80px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sys-complete_t {
+	background-image: url(../images/niv/complete1.png);
+	background-repeat:no-repeat;
+	width:47px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sys-maintain_t {
+	background-image: url(../images/niv/maintain1.png);
+	background-repeat:no-repeat;
+	width:47px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sys-disable_t {
+	background-image: url(../images/niv/disable1.png);
+	background-repeat:no-repeat;
+	width:47px;
+	autoWidth:false;
+	text-indent: 15px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.x-rc-form-table-td-sysnext {
+	background-image: url(../images/niv/next.png);
+	background-repeat:no-repeat;
+	width : 50px;
+	text-indent: 4px;
+	line-height:15px;
+	cursor:pointer;
+}
+
+.headerTd{
+	font-size:12px;
+}	

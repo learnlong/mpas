@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+	<package name="Authority" extends="json-default" namespace="/userManage/authority">
+		<!-- 用户页面 -->
+		<action name="*" class="com.rskytech.user.action.ComAuthorityAction" method="{1}">
+			<result>/userManage/professionAndAuth.jsp</result>
+			<result  name="professionAndAuth">/userManage/professionAndAuth.jsp</result>
+			<result  name="userAndAuth">/userManage/userAndAuth.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="lh6" extends="json-default" namespace="/lhirf/lh_6">
+       <action name="*" class="com.rskytech.lhirf.action.Lh6Action" method="{1}">
+				<!-- login -->
+				<result name="success" >/lhirf/lh_6.jsp</result>
+		</action>
+
+	</package>
+	
+</struts>

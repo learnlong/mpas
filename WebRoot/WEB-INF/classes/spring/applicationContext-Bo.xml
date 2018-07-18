@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-autowire="byName">
+	<!-- 登陆 BO -->
+	<bean id="loginBo" class="com.rskytech.login.bo.impl.LoginBo"></bean>
+	<!-- 用户管理 BO -->
+	<bean id="comUserBo" class="com.rskytech.user.bo.impl.ComUserBo"></bean>
+	<!-- ATA管理 BO -->
+	<bean id="comAtaBo" class="com.rskytech.basedata.bo.impl.ComAtaBo"></bean>
+	<!-- 系统分析 -->
+	<bean id="msiSelectBo" class="com.rskytech.sys.bo.impl.MsiSelectBo" />
+	<bean id="msiMainBo" class="com.rskytech.sys.bo.impl.MsiMainBo" />
+	<bean id="m0Bo" class="com.rskytech.sys.bo.impl.M0Bo" />
+	<bean id="mstepBo" class="com.rskytech.sys.bo.impl.MStepBo" />
+	<bean id="m11Bo" class="com.rskytech.sys.bo.impl.M11Bo" />
+	<bean id="m12Bo" class="com.rskytech.sys.bo.impl.M12Bo" />
+	<bean id="m13Bo" class="com.rskytech.sys.bo.impl.M13Bo" />
+	<bean id="m2Bo" class="com.rskytech.sys.bo.impl.M2Bo" />
+	<bean id="m3Bo" class="com.rskytech.sys.bo.impl.M3Bo" />
+	<bean id="m4Bo" class="com.rskytech.sys.bo.impl.M4Bo" />
+	<bean id="m5Bo" class="com.rskytech.sys.bo.impl.M5Bo" />
+	<bean id="reCheckMsiBo" class="com.rskytech.sys.bo.impl.ReCheckMsiBo" />
+	<bean id="mSetBo" class="com.rskytech.sys.bo.impl.MSetBo" />
+	<!-- 系统分析 end -->
+	<!-- 自定义基本裂纹长度 -->
+	<bean id="defineBaseCrackLenBo" class="com.rskytech.paramdefinemanage.bo.impl.DefineBaseCrackLenBo"></bean>
+	<!-- 自定义结构参数 -->
+	<bean id="defineStructureParameterBo" class="com.rskytech.paramdefinemanage.bo.impl.DefineStructureParameterBo"></bean>
+	<!-- 自定义结构评级 -->
+	<bean id="structureGradeBo" class="com.rskytech.paramdefinemanage.bo.impl.StructureGradeBo"></bean>
+	<!-- 自定义增强区域参数 -->
+	<bean id="increaseRegionParamBo" class="com.rskytech.paramdefinemanage.bo.impl.IncreaseRegionParamBo"></bean>
+	<!-- 自定义标准区域参数 -->
+	<bean id="standardRegionParamBo" class="com.rskytech.paramdefinemanage.bo.impl.StandardRegionParamBo"></bean>
+	<bean id="cusLevelBo" class="com.rskytech.paramdefinemanage.bo.impl.CusLevelBo"></bean>
+	<bean id="cusEdrAdrBo" class="com.rskytech.paramdefinemanage.bo.impl.CusEdrAdrBo"></bean>
+	<!-- 自定义LHIRF分析参数 -->
+	<bean id="lhirfParamBo" class="com.rskytech.paramdefinemanage.bo.impl.LhirfParamBo"></bean>
+	<!-- 自定义MRBR报告 -->
+	<bean id="mrbrReportBo" class="com.rskytech.paramdefinemanage.bo.impl.MrbrReportBo"></bean>
+	<bean id="cusMpdPsBo" class="com.rskytech.paramdefinemanage.bo.impl.CusMpdPsBo"></bean>
+	<bean id="mrbVersionBo" class="com.rskytech.paramdefinemanage.bo.impl.MrbVersionBo"></bean>
+	<bean id="taskMrbMaintainBo" class="com.rskytech.paramdefinemanage.bo.impl.TaskMrbMaintainBo"></bean>
+	<!-- 自定义MPD报告 -->
+	<bean id="mpdReportBo" class="com.rskytech.paramdefinemanage.bo.impl.MpdReportBo"></bean>
+	<bean id="cusMpdChapterBo" class="com.rskytech.paramdefinemanage.bo.impl.CusMpdChapterBo"></bean>
+	<bean id="taskMpdBo" class="com.rskytech.paramdefinemanage.bo.impl.TaskMpdBo"></bean>
+	<bean id="taskMpdVersionBo" class="com.rskytech.paramdefinemanage.bo.impl.TaskMpdVersionBo"></bean>
+	
+	<!-- 机型管理 BO -->
+	<bean id="comModelSeriesBo" class="com.rskytech.basedata.bo.impl.ComModelSeriesBo"></bean>
+	<!-- 专业室 BO -->
+	<bean id="comProfessionBo" class="com.rskytech.user.bo.impl.ComProfessionBo"></bean>
+	<!-- 专业室权限 BO -->
+	<bean id="comAuthorityBo" class="com.rskytech.user.bo.impl.ComAuthorityBo"></bean>
+	
+	<!-- 树 -->
+	<bean id="zaTreeBO" class="com.rskytech.area.bo.impl.ZaTreeBO"></bean>
+	<bean id="lhTreeBo" class="com.rskytech.lhirf.bo.impl.LhTreeBo"></bean>
+	<bean id="sysTreeBo" class="com.rskytech.sys.bo.impl.SysTreeBo"></bean>
+	<bean id="structTreeBo" class="com.rskytech.struct.bo.impl.StructTreeBo"></bean>
+	<bean id="comReportBo" class="com.rskytech.report.bo.impl.ComReportBo"></bean>
+	<!-- 分析审批流程主BO -->
+	<bean id="comProcessBo" class="com.rskytech.process.bo.impl.ComProcessBo"></bean>
+	<!-- 分析审批流程明细BO -->
+	<bean id="comProcessDetailBo" class="com.rskytech.process.bo.impl.ComProcessDetailBo"></bean>
+	
+	<!-- 文档管理BO -->
+	<bean id="comFileBo" class="com.rskytech.file.bo.impl.ComFileBo"></bean>
+	<!-- msg任务 -->
+	<bean id="taskMsgBo" class="com.rskytech.task.bo.impl.TaskMsgBo"></bean>
+	<bean id="taskMsgDetailBo" class="com.rskytech.task.bo.impl.TaskMsgDetailBo"></bean>
+	<!-- 协调单BO -->
+	<bean id="comCoordinationBo" class="com.rskytech.process.bo.impl.ComCoordinationBo"></bean>
+	<!-- 区域信息BO -->
+	<bean id="comAreaBo" class="com.rskytech.basedata.bo.impl.ComAreaBo"></bean>
+	<!-- MMEL维护BO -->
+	<bean id="comMmelBo" class="com.rskytech.basedata.bo.impl.ComMmelBo"></bean>
+	<!-- 供应商管理BO -->
+	<bean id="comVendorBo" class="com.rskytech.basedata.bo.impl.ComVendorBo"></bean>
+	<!-- 帮助管理BO -->
+	<bean id="comHelpBo" class="com.rskytech.basedata.bo.impl.ComHelpBo"></bean>
+	<!-- 	文件上传Bo -->
+	<bean id="fileUploadBo" class="com.rskytech.basedata.bo.impl.FileUploadBo"></bean>
+	
+	<!--结构分析BO -->
+	<bean  id="ssiMainBo" class="com.rskytech.struct.bo.impl.SsiMainBo"></bean>
+	<bean  id="ssiSelectBo" class="com.rskytech.struct.bo.impl.SsiSelectBo"></bean>
+	<bean  id="ssiStepBo" class="com.rskytech.struct.bo.impl.SsiStepBo"></bean>
+	<bean id="s1Bo" class="com.rskytech.struct.bo.impl.S1Bo"></bean>
+	<bean id="s2Bo" class="com.rskytech.struct.bo.impl.S2Bo"></bean>
+	<bean id="s3Bo" class="com.rskytech.struct.bo.impl.S3Bo"></bean>
+	<bean id="s4Bo" class="com.rskytech.struct.bo.impl.S4Bo"></bean>
+	<bean id="s5Bo" class="com.rskytech.struct.bo.impl.S5Bo"></bean>
+	<bean id="s6Bo" class="com.rskytech.struct.bo.impl.S6Bo"></bean>
+	<bean id="s7Bo" class="com.rskytech.struct.bo.impl.S7Bo"></bean>
+	<bean id="s8Bo" class="com.rskytech.struct.bo.impl.S8Bo"></bean>
+	<bean id="syBo" class="com.rskytech.struct.bo.impl.SyBo"></bean>
+	<bean id="unSsiBo" class="com.rskytech.struct.bo.impl.UnSsiBo"></bean>
+	<!--L/HIRF分析 -->
+	<bean  id="lhMainBo" class="com.rskytech.lhirf.bo.impl.LhMainBo"></bean>
+	<bean  id="lhSelectBo" class="com.rskytech.lhirf.bo.impl.LhSelectBo"></bean>
+	<bean  id="lhStepBo" class="com.rskytech.lhirf.bo.impl.LhStepBo"></bean>
+	<bean  id="lhMrbBo" class="com.rskytech.lhirf.bo.impl.LhMrbBo"></bean>
+	<bean  id="lh1Bo" class="com.rskytech.lhirf.bo.impl.Lh1Bo"></bean>
+	<bean  id="lh1aBo" class="com.rskytech.lhirf.bo.impl.Lh1aBo"></bean>
+	<bean  id="lh2Bo" class="com.rskytech.lhirf.bo.impl.Lh2Bo"></bean>
+	<bean  id="lh3Bo" class="com.rskytech.lhirf.bo.impl.Lh3Bo"></bean>
+	<bean  id="lh4Bo" class="com.rskytech.lhirf.bo.impl.Lh4Bo"></bean>
+	<bean  id="lh5Bo" class="com.rskytech.lhirf.bo.impl.Lh5Bo"></bean>
+	<bean  id="lh6Bo" class="com.rskytech.lhirf.bo.impl.Lh6Bo"></bean>
+	
+	<bean id="za1Bo" class="com.rskytech.area.bo.impl.Za1Bo"></bean>
+	<bean id="za2Bo" class="com.rskytech.area.bo.impl.Za2Bo"></bean>
+	<bean id="za41Bo" class="com.rskytech.area.bo.impl.Za41Bo"></bean>
+	<bean id="za42Bo" class="com.rskytech.area.bo.impl.Za42Bo"></bean>
+	<bean id="za43Bo" class="com.rskytech.area.bo.impl.Za43Bo"></bean>
+	<bean id="za5Bo" class="com.rskytech.area.bo.impl.Za5Bo"></bean>
+	<bean id="za6Bo" class="com.rskytech.area.bo.impl.Za6Bo"></bean>
+	<bean id="za7Bo" class="com.rskytech.area.bo.impl.Za7Bo"></bean>
+	<bean id="za8Bo" class="com.rskytech.area.bo.impl.Za8Bo"></bean>
+	<bean id="za9Bo" class="com.rskytech.area.bo.impl.Za9Bo"></bean>
+	<bean id="zaStepBo" class="com.rskytech.area.bo.impl.ZaStepBo"></bean>
+	<bean id="areaCandidateTaskSearchBo" class="com.rskytech.area.bo.impl.AreaCandidateTaskSearchBo"></bean>
+	<bean id="areaTaskTrackSearchBo" class="com.rskytech.area.bo.impl.AreaTaskTrackSearchBo"></bean>
+	
+	<!-- MRB和MPD维护 -->
+	<bean id="mrbMaintainBo" class="com.rskytech.task.bo.impl.MrbMaintainBo"></bean>
+	<bean id="mpdMaintainBo" class="com.rskytech.task.bo.impl.MpdMaintainBo"></bean>
+	
+	<!-- MSG-3查询 -->
+	<bean id="msgSearchBo" class="com.rskytech.task.bo.impl.MsgSearchBo"></bean>
+	
+	<!-- 生成系统word报表 -->
+	<bean id = "reportSystemBo" class="com.rskytech.report.word.reportSystem.bo.impl.ReportSystemBo"></bean>
+	<bean id = "reportStructBo" class="com.rskytech.report.word.reportStruct.bo.impl.ReportStructBo"></bean>
+	<bean id = "reportAreaBo" class="com.rskytech.report.word.reportArea.bo.impl.ReportAreaBo"></bean>
+	<bean id = "lhirfWordReportBo" class="com.rskytech.report.word.reportLhirf.bo.impl.LhirfWordReportBo"></bean>
+	
+	<!-- 生成excel报告 -->
+	<bean id = "mrbExcelBo" class="com.rskytech.report.excel.mrb.bo.impl.MrbExcelBo"></bean>
+	<bean id = "mpdExcelBo" class="com.rskytech.report.excel.mpd.bo.impl.MpdExcelBo"></bean>
+</beans>

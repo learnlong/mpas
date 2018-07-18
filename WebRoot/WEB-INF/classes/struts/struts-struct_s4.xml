@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="s4" extends="json-default" namespace="/struct/s4">
+       <action name="*" class="com.rskytech.struct.action.S4Action" method="{1}">
+				<!-- login -->
+				<result name="success">/struct/s4a_in.jsp</result>
+				<result name="s4bin">/struct/s4b_in.jsp</result>
+				<result name="s4aout">/struct/s4a_out.jsp</result>
+				<result name="s4bout">/struct/s4b_out.jsp</result>
+		</action>
+	</package>
+</struts>

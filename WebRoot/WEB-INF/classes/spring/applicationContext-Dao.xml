@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-autowire="byName">
+	<!-- 登陆 DAO -->
+	<bean id="loginDao" class="com.rskytech.login.dao.impl.LoginDao"></bean>
+	<!-- 用户管理 DAO -->
+	<bean id="comUserDao" class="com.rskytech.user.dao.impl.ComUserDao"></bean>
+	<!-- ata管理 DAO -->
+	<bean id="comAtaDao" class="com.rskytech.basedata.dao.impl.ComAtaDao"></bean>
+	<!-- 机型系列 DAO -->
+	<bean id="comModelSeriesDao" class="com.rskytech.basedata.dao.impl.ComModelSeriesDao"></bean>
+	<!-- 区域管理 DAO -->
+	<bean id="comAreaDao" class="com.rskytech.basedata.dao.impl.ComAreaDao"></bean>
+	<!-- 系统分析 -->
+	<!-- MSI选择 -->
+	<bean id="msiSelectDao" class="com.rskytech.sys.dao.impl.MsiSelectDao" />
+	<bean id="msiMainDao" class="com.rskytech.sys.dao.impl.MsiMainDao" />
+	<bean id="m0Dao" class="com.rskytech.sys.dao.impl.M0Dao" />
+	<bean id="m11Dao" class="com.rskytech.sys.dao.impl.M11Dao" />
+	<bean id="m12Dao" class="com.rskytech.sys.dao.impl.M12Dao" />
+	<bean id="m13Dao" class="com.rskytech.sys.dao.impl.M13Dao" />
+	<bean id="m2Dao" class="com.rskytech.sys.dao.impl.M2Dao" />
+	<bean id="m3Dao" class="com.rskytech.sys.dao.impl.M3Dao" />
+	<bean id="m4Dao" class="com.rskytech.sys.dao.impl.M4Dao" />
+	<bean id="m5Dao" class="com.rskytech.sys.dao.impl.M5Dao" />
+	<bean id="mStepDao" class="com.rskytech.sys.dao.impl.MStepDao"/>
+	<bean id="reCheckMsiDao" class="com.rskytech.sys.dao.impl.ReCheckMsiDao" />
+	<bean id="mSetDao" class="com.rskytech.sys.dao.impl.MSetDao" />
+	<!-- 系统分析 end -->
+	<!-- 自定义基本裂纹长度 -->
+	<bean id="defineBaseCrackLenDao" class="com.rskytech.paramdefinemanage.dao.impl.DefineBaseCrackLenDao"></bean>
+	<!-- 自定义结构参数 -->
+	<bean id="defineStructureParameterDao" class="com.rskytech.paramdefinemanage.dao.impl.DefineStructureParameterDao"></bean>
+	<!-- 自定义结构评级 -->
+	<bean id="structureGradeDao" class="com.rskytech.paramdefinemanage.dao.impl.StructureGradeDao"></bean>
+	<!-- 自定义增强区域参数 -->
+	<bean id="increaseRegionParamDao" class="com.rskytech.paramdefinemanage.dao.impl.IncreaseRegionParamDao"></bean>
+	<!-- 自定义标准区域参数 -->
+	<bean id="standardRegionParamDao" class="com.rskytech.paramdefinemanage.dao.impl.StandardRegionParamDao"></bean>
+	<!-- 自定义LHIRF分析参数 -->
+	<bean id="lhirfParamDao" class="com.rskytech.paramdefinemanage.dao.impl.LhirfParamDao"></bean>
+	<!-- 自定义MRBR报告 -->
+	<bean id="mrbrReportDao" class="com.rskytech.paramdefinemanage.dao.impl.MrbrReportDao"></bean>
+	<!-- 自定义MPD报告 -->
+	<bean id="mpdReportDao" class="com.rskytech.paramdefinemanage.dao.impl.MpdReportDao"></bean>
+	<bean id="cusMpdChapterDao" class="com.rskytech.paramdefinemanage.dao.impl.CusMpdChapterDao"></bean>
+	<bean id="cusMpdPsDao" class="com.rskytech.paramdefinemanage.dao.impl.CusMpdPsDao"></bean>
+	<bean id="taskMpdDao" class="com.rskytech.paramdefinemanage.dao.impl.TaskMpdDao"></bean>
+	<bean id="taskMpdVersionDao" class="com.rskytech.paramdefinemanage.dao.impl.TaskMpdVersionDao"></bean>
+	
+	<!-- 树 -->
+	<bean id="zaTreeDao" class="com.rskytech.area.dao.impl.ZaTreeDao"></bean>
+	<bean id="lhTreeDao" class="com.rskytech.lhirf.dao.impl.LhTreeDao"></bean>
+	<bean id="sysTreeDao" class="com.rskytech.sys.dao.impl.SysTreeDao"></bean>
+	<bean id="structTreeDao" class="com.rskytech.struct.dao.impl.StructTreeDao"></bean>
+	<bean id="comReportDao" class="com.rskytech.report.dao.impl.ComReportDao"></bean>
+	<!-- 分析审批流程主DAO -->
+	<bean id="comProcessDao" class="com.rskytech.process.dao.impl.ComProcessDao"></bean>
+	<!-- 分析审批流程明细DAO -->
+	<bean id="comProcessDetailDao" class="com.rskytech.process.dao.impl.ComProcessDetailDao"></bean>
+	
+	<!-- 文档管理信息DAO -->
+	<bean id="comFileDao" class="com.rskytech.file.dao.impl.ComFileDao"></bean>
+	<!-- 专业室维护DAO -->
+	<bean id="comProfessionDao" class="com.rskytech.user.dao.impl.ComProfessionDao"></bean>
+	<!-- 专业室维护DAO -->
+	<bean id="comAuthorityDao" class="com.rskytech.user.dao.impl.ComAuthorityDao"></bean>
+	
+	<!-- MSG3任务 -->
+	<bean id="taskMsgDao" class="com.rskytech.task.dao.impl.TaskMsgDao"></bean>
+	<!-- MSG3子表任务 -->
+	<bean id="taskMsgDetailDao" class="com.rskytech.task.dao.impl.TaskMsgDetailDao"></bean>
+	<!-- MMEL管理DAO -->
+	<bean id="comMmelDao" class="com.rskytech.basedata.dao.impl.ComMmelDao"></bean>
+	<!-- 供应商管理DAO -->
+	<bean id="comVendorDao" class="com.rskytech.basedata.dao.impl.ComVendorDao"></bean>
+	<!-- 协调单DAO -->
+	<bean id="comCoordinationDao" class="com.rskytech.process.dao.impl.ComCoordinationDao"></bean>
+	<!-- 帮助管理DAO -->
+	<bean id="comHelpDao" class="com.rskytech.basedata.dao.impl.ComHelpDao"></bean>
+	<!--结构分析DAO -->
+	<bean id="ssiSelectDao" class="com.rskytech.struct.dao.impl.SsiSelectDao"></bean>
+	<bean id="ssiMainDao" class="com.rskytech.struct.dao.impl.SsiMainDao"></bean>
+	<bean id="s1Dao" class="com.rskytech.struct.dao.impl.S1Dao"></bean>
+	<bean id="s2Dao" class="com.rskytech.struct.dao.impl.S2Dao"></bean>
+	<bean id="s3Dao" class="com.rskytech.struct.dao.impl.S3Dao"></bean>
+	<bean id="s4Dao" class="com.rskytech.struct.dao.impl.S4Dao"></bean>
+	<bean id="s5Dao" class="com.rskytech.struct.dao.impl.S5Dao"></bean>
+	<bean id="s6Dao" class="com.rskytech.struct.dao.impl.S6Dao"></bean>
+	<bean id="s7Dao" class="com.rskytech.struct.dao.impl.S7Dao"></bean>
+	<bean id="s8Dao" class="com.rskytech.struct.dao.impl.S8Dao"></bean>
+	<bean id="syDao" class="com.rskytech.struct.dao.impl.SyDao"></bean>
+	<bean id="unSsiDao" class="com.rskytech.struct.dao.impl.UnSsiDao"></bean>
+	<!-- 	lhirf分析DAO -->
+	<bean id="lhMainDao" class="com.rskytech.lhirf.dao.impl.LhMainDao"></bean>
+	<bean id="lhSelectDao" class="com.rskytech.lhirf.dao.impl.LhSelectDao"></bean>
+	<bean id="lhStepDao" class="com.rskytech.lhirf.dao.impl.LhStepDao"></bean>
+	<bean id="lhMrbDao" class="com.rskytech.lhirf.dao.impl.LhMrbDao"></bean>
+	<bean id="lh1aDao" class="com.rskytech.lhirf.dao.impl.Lh1aDao"></bean>
+	<bean id="lh1Dao" class="com.rskytech.lhirf.dao.impl.Lh1Dao"></bean>
+	<bean id="lh2Dao" class="com.rskytech.lhirf.dao.impl.Lh2Dao"></bean>
+	<bean id="lh3Dao" class="com.rskytech.lhirf.dao.impl.Lh3Dao"></bean>
+	<bean id="lh4Dao" class="com.rskytech.lhirf.dao.impl.Lh4Dao"></bean>
+	<bean id="lh5Dao" class="com.rskytech.lhirf.dao.impl.Lh5Dao"></bean>
+	<bean id="lh6Dao" class="com.rskytech.lhirf.dao.impl.Lh6Dao"></bean>
+	
+	<bean id="za1Dao" class="com.rskytech.area.dao.impl.Za1Dao"></bean>
+	<bean id="za2Dao" class="com.rskytech.area.dao.impl.Za2Dao"></bean>
+	<bean id="za41Dao" class="com.rskytech.area.dao.impl.Za41Dao"></bean>
+	<bean id="za42Dao" class="com.rskytech.area.dao.impl.Za42Dao"></bean>
+	<bean id="za43Dao" class="com.rskytech.area.dao.impl.Za43Dao"></bean>
+	<bean id="za5Dao" class="com.rskytech.area.dao.impl.Za5Dao"></bean>
+	<bean id="za6Dao" class="com.rskytech.area.dao.impl.Za6Dao"></bean>
+	<bean id="za7Dao" class="com.rskytech.area.dao.impl.Za7Dao"></bean>
+	<bean id="za8Dao" class="com.rskytech.area.dao.impl.Za8Dao"></bean>
+	<bean id="za9Dao" class="com.rskytech.area.dao.impl.Za9Dao"></bean>
+	<bean id="zaStepDao" class="com.rskytech.area.dao.impl.ZaStepDao"></bean>
+	<bean id="areaCandidateTaskSearchDao" class="com.rskytech.area.dao.impl.AreaCandidateTaskSearchDao"></bean>
+	<bean id="areaTaskTrackSearchDao" class="com.rskytech.area.dao.impl.AreaTaskTrackSearchDao"></bean>
+	
+	<!-- MRB和MPD维护 -->
+	<bean id="mrbMaintainDao" class="com.rskytech.task.dao.impl.MrbMaintainDao"></bean>
+	<bean id="mpdMaintainDao" class="com.rskytech.task.dao.impl.MpdMaintainDao"></bean>
+	
+	<!-- MSG-3查询 -->
+	<bean id="msgSearchDao" class="com.rskytech.task.dao.impl.MsgSearchDao"></bean>
+	
+	<!-- 生成系统word报表 -->
+	<bean id = "reportStructDao" class="com.rskytech.report.word.reportStruct.dao.impl.ReportStructDao"></bean>
+</beans>

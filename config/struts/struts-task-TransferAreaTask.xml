@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="transfer" extends="json-default" namespace="/task/transfer">
+       <action name="*" class="com.rskytech.task.action.TransferAreaTaskAction" method="{1}">
+				<result name="sys">/sys/sysToArea.jsp</result>	
+				<result name="struct">/struct/structToArea.jsp</result>	
+				<result name="lhirf">/lhirf/lhToArea.jsp</result>		
+		</action>
+	</package>
+</struts>

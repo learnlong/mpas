@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="/struct" extends="json-default" namespace="/struct/ssiSelect">
+       <action name="*" class="com.rskytech.struct.action.SsiSelectAction" method="{1}">
+				<!-- login -->
+				<result name="success">/struct/structSelect.jsp</result>
+		</action>
+
+	</package>
+	
+</struts>

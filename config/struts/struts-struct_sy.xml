@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="sy" extends="json-default" namespace="/struct/sy">
+       <action name="*" class="com.rskytech.struct.action.SyAction" method="{1}">
+				<!-- login -->
+				<result name="success">/struct/sya_in.jsp</result>
+				<result name="sybin">/struct/syb_in.jsp</result>
+				<result name="syaout">/struct/sya_out.jsp</result>
+				<result name="sybout">/struct/syb_out.jsp</result>
+		</action>
+	</package>
+</struts>

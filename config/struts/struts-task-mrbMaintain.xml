@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="mrbMaintain" extends="json-default" namespace="/task/mrbMaintain">
+		<action name="*" class="com.rskytech.task.action.MrbMaintainAction" method="{1}">
+			<result name="success">/task/mrbMaintain.jsp</result>	
+		</action>
+	</package>
+</struts>

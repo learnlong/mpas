@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="s6" extends="json-default" namespace="/struct/s6">
+       <action name="*" class="com.rskytech.struct.action.S6Action" method="{1}">
+				<!-- login -->
+				<result name="s6in">/struct/s6_in.jsp</result>
+				<result name="s6out">/struct/s6_out.jsp</result>
+		</action>
+	</package>
+</struts>

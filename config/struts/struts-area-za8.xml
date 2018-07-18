@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="za8" extends="json-default" namespace="/area/za8">
+		<action name="*" class="com.rskytech.area.action.Za8Action" method="{1}">
+			<result name="success">/area/za8.jsp</result>	
+		</action>
+	</package>
+</struts>

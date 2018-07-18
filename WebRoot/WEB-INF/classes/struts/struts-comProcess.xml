@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+	<package name="ComProcess" extends="json-default" namespace="/com/process">
+		<!-- 文档管理页面 -->
+		<action name="*" class="com.rskytech.process.action.ComProcessAction" method="{1}">
+			<result  name="launch">/process/launch.jsp</result>
+			<result  name="check">/process/check.jsp</result>
+			<result  name="query">/process/query.jsp</result>
+		</action>	
+	</package>
+</struts>

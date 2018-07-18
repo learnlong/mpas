@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="sysTree" extends="json-default" namespace="/sys/tree">
+		<action name="*" class="com.rskytech.sys.action.SysTreeAction" method="{1}">
+			<result name="success">/sys/sysFrameAndTree.jsp</result>
+			<result name="showSysTreeGrid">/sys/system.jsp</result> 				
+		</action>
+	</package>
+</struts>

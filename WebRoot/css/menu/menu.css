@@ -1,0 +1,33 @@
+
+a:link {
+	color:#ffffff; 
+	text-decoration:none;
+}
+a:visited {
+	color:#ffffff;
+	text-decoration:none;
+} 
+a:hover{
+	color: blue;
+	text-decoration:none;
+} 
+table{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+.top{
+	width:100%;
+	height:80px;
+	color:#FFF;
+	font-weight:bold;
+	font-size:12px;
+	background-position:left top;
+	background-repeat:no-repeat;
+	vertical-align:bottom;
+	z-index: 9999;
+	position:absolute;
+}
+
+ul {padding:0;margin:0;list-style-type:none;float:left;z-index:9999;}
+ul li {float:left;display:inline; padding-right: 5px}

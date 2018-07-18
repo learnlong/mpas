@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="s5" extends="json-default" namespace="/struct/s5">
+       <action name="*" class="com.rskytech.struct.action.S5Action" method="{1}">
+				<!-- login -->
+				<result name="success">/struct/s5a_in.jsp</result>
+				<result name="s5bin">/struct/s5b_in.jsp</result>
+				<result name="s5aout">/struct/s5a_out.jsp</result>
+				<result name="s5bout">/struct/s5b_out.jsp</result>
+		</action>
+	</package>
+</struts>

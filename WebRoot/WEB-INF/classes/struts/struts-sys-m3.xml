@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="m3" extends="json-default" namespace="/sys/m3">
+       <action name="*" class="com.rskytech.sys.action.M3Action" method="{1}">
+				<result name="success">/sys/m_3.jsp</result>				
+		</action>
+	</package>
+</struts>

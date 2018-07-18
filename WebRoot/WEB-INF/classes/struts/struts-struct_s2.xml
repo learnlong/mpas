@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="s2" extends="json-default" namespace="/struct/s2">
+       <action name="*" class="com.rskytech.struct.action.S2Action" method="{1}">
+				<!-- login -->
+				<result name="success">/struct/s2.jsp</result>
+		</action>
+	</package>
+</struts>

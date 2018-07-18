@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+
+<table name="COM_USER" schema="MPAS" class="comUserPojo">
+		<primary-key>
+			<generator class="sequence"></generator>
+			<key-column name="USER_ID" jdbc-type="INTEGER"
+				property="userId" type="Integer" />
+		</primary-key>
+		<column name="VALID_FLAG" jdbc-type="INTEGER"
+			property="validFlag" type="Integer">
+		</column>
+		<column name="CREATE_USER" jdbc-type="INTEGER"
+			property="createUser" type="Integer">
+		</column>
+		<column name="MODIFY_USER" jdbc-type="INTEGER"
+			property="modifyUser" type="Integer">
+		</column>
+	</table>
+	<table name="COM_USER_AUTHORITY" schema="MPAS"
+		class="comUserAuthority">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_MENU" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_FILE" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="C0M_PROFESSION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="C0M_PROFESSION_USER" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_AREA" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_AREA_DETAIL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_ATA" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_AUTHORITY" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_COORDINATION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_DIRECTORY" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_LOG_DB" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_LOG_OPERATE" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_MMEL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_MODEL_SERIES" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_POSITION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_POSITION_ROLE" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_REPORT" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_ROLE" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_ROLE_MENU" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_USER" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_USER_AUTHORITY" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_USER_POSITION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_VENDOR" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_CRACK" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_DISPLAY" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_EDR_ADR" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_HELP" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_INTERVAL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_ITEM_S45" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_ITEM_ZA5" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_LEVEL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MATRIX" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MPD_CHAPTER" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MPD_PS" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MPD_SECTION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MRB_CHAPTER" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MRB_PS" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="CUS_MRB_SECTION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_1" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_1A" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_2" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_3" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_4" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_5" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_MAIN" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="LH_STEP" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_0" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_1_1" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_1_2" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_1_3" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_1_3_C" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_1_3_F" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_2" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_3" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_3_ADDITIONAL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_4" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_MAIN" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_REFER_AFM" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_REFER_MMEL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_REFER_MSI" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_SELECT" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="M_STEP" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_1" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_2" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_3" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_3_CRACK" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_4" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_5" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_6" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_6_EA" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_MAIN" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_REMARK" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="S_STEP" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="TASK_MPD" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="TASK_MRB" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="TASK_MSG" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="TASK_MSG_DETAIL" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_1" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_2" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_41" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_42" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_43" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_5" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_MAIN" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ZA_STEP" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="COM_PROFESSION" schema="MPAS_603">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+<table name="COM_PROFESSION_USER" schema="MPAS_603">
+	<primary-key>
+		<generator class="uuid.hex"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

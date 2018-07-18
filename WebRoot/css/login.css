@@ -1,0 +1,172 @@
+body {
+	background-image: url(../images/1.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	overflow: hidden;
+}
+
+.body {
+	width: 100%;
+	height: 600px;
+}
+
+.x-panel-body {
+	background-image: url("images/5.gif");
+}
+
+.x-panel-btns td.x-toolbar-cell {
+	padding: 10px;
+}
+
+.formdiv {
+	background-image: url(../images/2.png);
+	background-repeat: repeat-x;
+	width: 750px;
+	height: 327px;
+	margin-top: 130px;
+	border: -moz-linear-gradient(top, red, blue);
+	box-shadow: 3px 3px 4px #a0c3db;
+	-moz-box-shadow: 3px 3px 4px #a0c3db;
+	-webkit-box-shadow: 3px 3px 4px #a0c3db;
+	filter: progid : DXImageTransform.Microsoft.Shadow ( Strength = 4,Direction = 135, Color = '#a0c3db' );
+	border-top: 4px solid #a0c3db;
+	border-left: 3px solid #a0c3db;
+	border-right: 3px solid #a0c3db;
+	border-bottom: 2px solid #a0c3db;
+}
+
+.diyidiv {
+	width: 750px;
+	height: 120px;
+}
+
+.biaozhi {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-image: url(../images/biaozhi.gif);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	float: left;
+}
+
+.welcometext {
+	width: 85%;
+	height: 100px;
+	/*×ÖÌå¼Ó´Ö:bold(ºÚÐ±Ìå)*/
+	font-weight: bold;
+	line-height: 65px;
+	text-align: center;
+	/*font-family: "Î¢ÈíÑÅºÚ";*/
+	color: #0a5ba4;
+	font-size: 35px;
+	float: right;
+	margin-right: 15px;
+}
+
+.dierdiv {
+	width: 750px;
+	height: 190px;
+}
+
+.feijidiv {
+	width: 350px;
+	height: 190px;
+	float: left;
+	margin-top: -5px;
+}
+
+.feiji {
+	background-image: url(../images/695422548545.png);
+	background-repeat: no-repeat;
+	width: 230px;
+	height: 160px;
+	float: left;
+	margin-left: 80px;
+}
+
+.jixingfeiji {
+	background-image: url(../images/69.png);
+	background-repeat: no-repeat;
+	width: 230px;
+	height: 112px;
+	float: left;
+	margin-left: 30px;
+}
+
+.plane {
+	width: 240;
+	height: 160px;
+	float: left;
+	margin-left: 35px;
+}
+
+.rolemodelchoice {
+	width: 200px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	margin-left: 40px;
+	font-family: 'Î¢ÈíÑÅºÚ';
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.shu {
+	background-image: url(../images/shu.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 140px;
+	float: right;
+	margin-right: 20px;
+}
+
+.rightdiv {
+	width: 360px;
+	height: 190px;
+	float: left;
+}
+
+.welcomediv {
+	width: 84px;
+	height: 18px;
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+	float: left;
+	line-height: 18px;
+	text-align: left;
+}
+
+.namediv {
+	width: 360px;
+	height: 26px;
+	line-height: 26px;
+	text-align: left;
+	float: left;
+}
+
+.passworddiv {
+	width: 360px;
+	height: 26px;
+	line-height: 26px;
+	text-align: left;
+	float: left;
+	margin-top: 10px;
+}
+
+.submitdiv {
+	height: 25px;
+	width: 70px;
+}
+
+.resetdiv {
+	height: 25px;
+	width: 70px;
+	margin-right: 60px;
+}
+
+.style1 {
+	color: #000000;
+}

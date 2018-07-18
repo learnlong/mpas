@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mpas"
+  id="myeclipse.1296223597484"
+  context-root="/mpas"
+  j2ee-spec="5.0"
+  archive="mpas.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

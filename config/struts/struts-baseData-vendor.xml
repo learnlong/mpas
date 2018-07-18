@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="vendor" extends="json-default" namespace="/baseData/vendor">
+		<action name="*" class="com.rskytech.basedata.action.ComVendorAction" method="{1}">
+			<result name="success" type="redirect">/baseData/comVendor.jsp</result>
+		</action>
+	</package>
+</struts>
